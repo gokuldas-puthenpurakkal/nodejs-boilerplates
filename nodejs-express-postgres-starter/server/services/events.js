@@ -1,23 +1,24 @@
 var eventsRepository = require('../repository/events');
+var logger = require('../helpers/logger');
 
 function getAvailableEvents(req, res, next) {
-    console.log('Service method : getAvailableEvents');
+    logger.info('Service method : getAvailableEvents');
     eventsRepository.getAvailableEvents( req, res, next);
 }
 
 function addEvent(req, res, next) {
-    console.log('Service method : addEvent');
-    console.log(req.body);
+    logger.info('Service method : addEvent');
+    logger.info(req.body);
 }
 
 function updateEvent(req, res, next) {
-    console.log('Service method : updateEvent');
-    console.log(req.body);
+    logger.info('Service method : updateEvent');
+    logger.info(req.body);
 }
 
 function deleteEvent(req, res, next) {
-    console.log('Service method : deleteEvent');
-    console.log(req.body);
+    logger.info('Service method : deleteEvent');
+    logger.info(req.body);
 }
 
 module.exports = {

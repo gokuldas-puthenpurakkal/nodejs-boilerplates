@@ -12,8 +12,8 @@ config.postgres.password = process.env.PG_DB_PASSWORD || config.postgres.passwor
 config.logger.logDir =  process.env.LOG_DIR  || config.logger.logDir;
 config.logger.filename = process.env.LOG_FILE_NAME || config.logger.filename;
 config.logger.datePattern = process.env.PG_LOG_FILE_DATE_PATTERN || config.logger.datePattern;
-config.logger.consoleLogLevel = process.env.PG_LOG_CONSOLE_LEVEL || config.logger.datePattern;
-config.logger.devFileLogLevel = process.env.PG_LOG_FILE_DEV_LEVEL || config.logger.datePattern;
-config.logger.prodFileLogLevel = process.env.PG_LOG_FILE_PROD_LEVEL || config.logger.datePattern;
+config.logger.consoleLogLevel = process.env.PG_LOG_CONSOLE_LEVEL || config.logger.consoleLogLevel;
+config.logger.devFileLogLevel = process.env.PG_LOG_FILE_DEV_LEVEL || config.logger.devFileLogLevel;
+config.logger.prodFileLogLevel = process.env.PG_LOG_FILE_PROD_LEVEL || config.logger.prodFileLogLevel;
 
 module.exports = config;

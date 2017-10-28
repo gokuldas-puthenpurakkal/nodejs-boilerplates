@@ -1,0 +1,19 @@
+{
+  "port":8080,
+  "env":"development",
+	"postgres":{
+      "host": "localhost",
+      "port": 5432,
+      "database": "reindex",
+      "username":"postgres",
+      "password":"Password123"
+    },
+    "logger":{
+      "logDir":"log",
+      "filename":"-events.log",
+      "datePattern":"yyyy-MM-dd",
+      "consoleLogLevel":"info",
+      "devFileLogLevel":"verbose",
+      "prodFileLogLevel":"info"
+    }
+}
